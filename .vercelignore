@@ -1,0 +1,55 @@
+# ====================================================================
+# Vercel Deployment Ignore Configuration (.vercelignore)
+# Prevents large data files, virtual environments, development tools,
+# and unnecessary models from being bundled into Vercel serverless functions.
+# ====================================================================
+
+# 1. Training & Cleaned Datasets (Keep data out of serverless bundle)
+data/
+*.csv
+*.parquet
+*.zip
+
+# 2. Virtual Environments & Local Standalone Tooling
+.venv/
+venv/
+ENV/
+env/
+.tools/
+
+# 3. Development Test Suites & Coverage
+tests/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 4. Heavy Machine Learning Artifacts Not Used in Production Inference
+# (Logistic Regression is 420 KB; Random Forest is 20.8 MB and excluded)
+models/random_forest_pipeline.joblib
+models/*.png
+
+# 5. Local Training Scripts & Streamlit GUI
+app.py
+src/dataset.py
+src/explore_dataset.py
+src/train.py
+src/tune_threshold.py
+src/evaluation.py
+
+# 6. Frontend Build Caches & Dependencies (when deploying backend from root)
+frontend/node_modules/
+frontend/.next/
+frontend/.env*.local
+
+# 7. Local Logs and Temporary Files
+*.log
+*.tmp
+*.bak
+uvicorn*.log
+
+# 8. Editor and OS Artifacts
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini

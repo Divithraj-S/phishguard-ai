@@ -1,0 +1,636 @@
+{
+  "metadata": {
+    "random_state": 42,
+    "test_size": 0.2,
+    "val_size": 0.2,
+    "min_recall_constraint": 0.9,
+    "candidate_thresholds": [
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "full_train_records": 14015,
+    "sub_train_records": 11212,
+    "val_records": 2803,
+    "held_out_test_records": 3504
+  },
+  "validation_evaluations": {
+    "Logistic_Regression": [
+      {
+        "threshold": 0.2,
+        "metrics": {
+          "accuracy": 0.9394,
+          "precision": 0.8615,
+          "recall": 0.9981,
+          "f1_score": 0.9248,
+          "false_positive_rate": 0.0957,
+          "true_negatives": 1588,
+          "false_positives": 168,
+          "false_negatives": 2,
+          "true_positives": 1045,
+          "confusion_matrix": [
+            [
+              1588,
+              168
+            ],
+            [
+              2,
+              1045
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      },
+      {
+        "threshold": 0.3,
+        "metrics": {
+          "accuracy": 0.9665,
+          "precision": 0.9243,
+          "recall": 0.9914,
+          "f1_score": 0.9567,
+          "false_positive_rate": 0.0484,
+          "true_negatives": 1671,
+          "false_positives": 85,
+          "false_negatives": 9,
+          "true_positives": 1038,
+          "confusion_matrix": [
+            [
+              1671,
+              85
+            ],
+            [
+              9,
+              1038
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      },
+      {
+        "threshold": 0.4,
+        "metrics": {
+          "accuracy": 0.9847,
+          "precision": 0.9718,
+          "recall": 0.9876,
+          "f1_score": 0.9796,
+          "false_positive_rate": 0.0171,
+          "true_negatives": 1726,
+          "false_positives": 30,
+          "false_negatives": 13,
+          "true_positives": 1034,
+          "confusion_matrix": [
+            [
+              1726,
+              30
+            ],
+            [
+              13,
+              1034
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      },
+      {
+        "threshold": 0.5,
+        "metrics": {
+          "accuracy": 0.9836,
+          "precision": 0.9836,
+          "recall": 0.9723,
+          "f1_score": 0.9779,
+          "false_positive_rate": 0.0097,
+          "true_negatives": 1739,
+          "false_positives": 17,
+          "false_negatives": 29,
+          "true_positives": 1018,
+          "confusion_matrix": [
+            [
+              1739,
+              17
+            ],
+            [
+              29,
+              1018
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      },
+      {
+        "threshold": 0.6,
+        "metrics": {
+          "accuracy": 0.9743,
+          "precision": 0.9909,
+          "recall": 0.9398,
+          "f1_score": 0.9647,
+          "false_positive_rate": 0.0051,
+          "true_negatives": 1747,
+          "false_positives": 9,
+          "false_negatives": 63,
+          "true_positives": 984,
+          "confusion_matrix": [
+            [
+              1747,
+              9
+            ],
+            [
+              63,
+              984
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      },
+      {
+        "threshold": 0.7,
+        "metrics": {
+          "accuracy": 0.9554,
+          "precision": 0.9936,
+          "recall": 0.8863,
+          "f1_score": 0.9369,
+          "false_positive_rate": 0.0034,
+          "true_negatives": 1750,
+          "false_positives": 6,
+          "false_negatives": 119,
+          "true_positives": 928,
+          "confusion_matrix": [
+            [
+              1750,
+              6
+            ],
+            [
+              119,
+              928
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      },
+      {
+        "threshold": 0.8,
+        "metrics": {
+          "accuracy": 0.9137,
+          "precision": 0.9975,
+          "recall": 0.7708,
+          "f1_score": 0.8696,
+          "false_positive_rate": 0.0011,
+          "true_negatives": 1754,
+          "false_positives": 2,
+          "false_negatives": 240,
+          "true_positives": 807,
+          "confusion_matrix": [
+            [
+              1754,
+              2
+            ],
+            [
+              240,
+              807
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      },
+      {
+        "threshold": 0.9,
+        "metrics": {
+          "accuracy": 0.8337,
+          "precision": 0.9983,
+          "recall": 0.5559,
+          "f1_score": 0.7141,
+          "false_positive_rate": 0.0006,
+          "true_negatives": 1755,
+          "false_positives": 1,
+          "false_negatives": 465,
+          "true_positives": 582,
+          "confusion_matrix": [
+            [
+              1755,
+              1
+            ],
+            [
+              465,
+              582
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      }
+    ],
+    "Random_Forest": [
+      {
+        "threshold": 0.2,
+        "metrics": {
+          "accuracy": 0.8644,
+          "precision": 0.734,
+          "recall": 0.999,
+          "f1_score": 0.8463,
+          "false_positive_rate": 0.2158,
+          "true_negatives": 1377,
+          "false_positives": 379,
+          "false_negatives": 1,
+          "true_positives": 1046,
+          "confusion_matrix": [
+            [
+              1377,
+              379
+            ],
+            [
+              1,
+              1046
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      },
+      {
+        "threshold": 0.3,
+        "metrics": {
+          "accuracy": 0.9372,
+          "precision": 0.859,
+          "recall": 0.9952,
+          "f1_score": 0.9221,
+          "false_positive_rate": 0.0974,
+          "true_negatives": 1585,
+          "false_positives": 171,
+          "false_negatives": 5,
+          "true_positives": 1042,
+          "confusion_matrix": [
+            [
+              1585,
+              171
+            ],
+            [
+              5,
+              1042
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      },
+      {
+        "threshold": 0.4,
+        "metrics": {
+          "accuracy": 0.9604,
+          "precision": 0.9171,
+          "recall": 0.9828,
+          "f1_score": 0.9488,
+          "false_positive_rate": 0.053,
+          "true_negatives": 1663,
+          "false_positives": 93,
+          "false_negatives": 18,
+          "true_positives": 1029,
+          "confusion_matrix": [
+            [
+              1663,
+              93
+            ],
+            [
+              18,
+              1029
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      },
+      {
+        "threshold": 0.5,
+        "metrics": {
+          "accuracy": 0.97,
+          "precision": 0.9599,
+          "recall": 0.9599,
+          "f1_score": 0.9599,
+          "false_positive_rate": 0.0239,
+          "true_negatives": 1714,
+          "false_positives": 42,
+          "false_negatives": 42,
+          "true_positives": 1005,
+          "confusion_matrix": [
+            [
+              1714,
+              42
+            ],
+            [
+              42,
+              1005
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      },
+      {
+        "threshold": 0.6,
+        "metrics": {
+          "accuracy": 0.9565,
+          "precision": 0.9833,
+          "recall": 0.8988,
+          "f1_score": 0.9391,
+          "false_positive_rate": 0.0091,
+          "true_negatives": 1740,
+          "false_positives": 16,
+          "false_negatives": 106,
+          "true_positives": 941,
+          "confusion_matrix": [
+            [
+              1740,
+              16
+            ],
+            [
+              106,
+              941
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      },
+      {
+        "threshold": 0.7,
+        "metrics": {
+          "accuracy": 0.9183,
+          "precision": 0.9952,
+          "recall": 0.7851,
+          "f1_score": 0.8777,
+          "false_positive_rate": 0.0023,
+          "true_negatives": 1752,
+          "false_positives": 4,
+          "false_negatives": 225,
+          "true_positives": 822,
+          "confusion_matrix": [
+            [
+              1752,
+              4
+            ],
+            [
+              225,
+              822
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      },
+      {
+        "threshold": 0.8,
+        "metrics": {
+          "accuracy": 0.8612,
+          "precision": 0.9985,
+          "recall": 0.6294,
+          "f1_score": 0.7721,
+          "false_positive_rate": 0.0006,
+          "true_negatives": 1755,
+          "false_positives": 1,
+          "false_negatives": 388,
+          "true_positives": 659,
+          "confusion_matrix": [
+            [
+              1755,
+              1
+            ],
+            [
+              388,
+              659
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      },
+      {
+        "threshold": 0.9,
+        "metrics": {
+          "accuracy": 0.776,
+          "precision": 1.0,
+          "recall": 0.4002,
+          "f1_score": 0.5716,
+          "false_positive_rate": 0.0,
+          "true_negatives": 1756,
+          "false_positives": 0,
+          "false_negatives": 628,
+          "true_positives": 419,
+          "confusion_matrix": [
+            [
+              1756,
+              0
+            ],
+            [
+              628,
+              419
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      }
+    ]
+  },
+  "selected_thresholds": {
+    "Logistic_Regression": {
+      "selected_threshold": 0.6,
+      "selection_reason": "Minimizes False Positive Rate (0.0051) while maintaining Recall >= 90% (Validation Recall: 0.9398).",
+      "min_recall_constraint": 0.9,
+      "metrics": {
+        "accuracy": 0.9743,
+        "precision": 0.9909,
+        "recall": 0.9398,
+        "f1_score": 0.9647,
+        "false_positive_rate": 0.0051,
+        "true_negatives": 1747,
+        "false_positives": 9,
+        "false_negatives": 63,
+        "true_positives": 984,
+        "confusion_matrix": [
+          [
+            1747,
+            9
+          ],
+          [
+            63,
+            984
+          ]
+        ],
+        "positive_class": "1 (Phishing Email)",
+        "negative_class": "0 (Safe Email)",
+        "zero_denominator_fpr": false
+      }
+    },
+    "Random_Forest": {
+      "selected_threshold": 0.5,
+      "selection_reason": "Minimizes False Positive Rate (0.0239) while maintaining Recall >= 90% (Validation Recall: 0.9599).",
+      "min_recall_constraint": 0.9,
+      "metrics": {
+        "accuracy": 0.97,
+        "precision": 0.9599,
+        "recall": 0.9599,
+        "f1_score": 0.9599,
+        "false_positive_rate": 0.0239,
+        "true_negatives": 1714,
+        "false_positives": 42,
+        "false_negatives": 42,
+        "true_positives": 1005,
+        "confusion_matrix": [
+          [
+            1714,
+            42
+          ],
+          [
+            42,
+            1005
+          ]
+        ],
+        "positive_class": "1 (Phishing Email)",
+        "negative_class": "0 (Safe Email)",
+        "zero_denominator_fpr": false
+      }
+    }
+  },
+  "test_evaluations": {
+    "Logistic_Regression": {
+      "baseline_threshold_0_50": {
+        "threshold": 0.5,
+        "metrics": {
+          "accuracy": 0.9792,
+          "precision": 0.9798,
+          "recall": 0.9641,
+          "f1_score": 0.9719,
+          "false_positive_rate": 0.0118,
+          "true_negatives": 2170,
+          "false_positives": 26,
+          "false_negatives": 47,
+          "true_positives": 1261,
+          "confusion_matrix": [
+            [
+              2170,
+              26
+            ],
+            [
+              47,
+              1261
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      },
+      "selected_optimal_threshold": {
+        "threshold": 0.6,
+        "metrics": {
+          "accuracy": 0.972,
+          "precision": 0.9879,
+          "recall": 0.9365,
+          "f1_score": 0.9615,
+          "false_positive_rate": 0.0068,
+          "true_negatives": 2181,
+          "false_positives": 15,
+          "false_negatives": 83,
+          "true_positives": 1225,
+          "confusion_matrix": [
+            [
+              2181,
+              15
+            ],
+            [
+              83,
+              1225
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        },
+        "relative_fp_reduction_percent": 42.31
+      }
+    },
+    "Random_Forest": {
+      "baseline_threshold_0_50": {
+        "threshold": 0.5,
+        "metrics": {
+          "accuracy": 0.968,
+          "precision": 0.9614,
+          "recall": 0.9526,
+          "f1_score": 0.957,
+          "false_positive_rate": 0.0228,
+          "true_negatives": 2146,
+          "false_positives": 50,
+          "false_negatives": 62,
+          "true_positives": 1246,
+          "confusion_matrix": [
+            [
+              2146,
+              50
+            ],
+            [
+              62,
+              1246
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        }
+      },
+      "selected_optimal_threshold": {
+        "threshold": 0.5,
+        "metrics": {
+          "accuracy": 0.968,
+          "precision": 0.9614,
+          "recall": 0.9526,
+          "f1_score": 0.957,
+          "false_positive_rate": 0.0228,
+          "true_negatives": 2146,
+          "false_positives": 50,
+          "false_negatives": 62,
+          "true_positives": 1246,
+          "confusion_matrix": [
+            [
+              2146,
+              50
+            ],
+            [
+              62,
+              1246
+            ]
+          ],
+          "positive_class": "1 (Phishing Email)",
+          "negative_class": "0 (Safe Email)",
+          "zero_denominator_fpr": false
+        },
+        "relative_fp_reduction_percent": 0.0
+      }
+    }
+  }
+}

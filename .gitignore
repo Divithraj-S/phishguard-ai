@@ -1,0 +1,46 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python Bytecode and Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Testing and Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Raw and Processed Datasets (keep data out of Git)
+data/raw/
+data/processed/
+*.csv
+*.parquet
+*.zip
+
+# Trained Model Artifacts (keep large binaries out of Git; track only production LR artifact)
+models/*.joblib
+!models/logistic_regression_pipeline.joblib
+models/*.png
+
+# Local Standalone Tools
+.tools/
+
+# Node & Next.js Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env*.local
+.env
+.env.local
+
+# OS & Editor Files
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,12 @@
+# PhishGuard AI - Core Production Serverless Dependencies (Vercel)
+# Pinned to the exact compatible versions under which the model pipeline was trained:
+# - scikit-learn 1.5.1 (exact match for serialized TfidfVectorizer & LogisticRegression)
+# - joblib 1.4.2 (exact match for deserialization)
+# - starlette <1.0.0 (justified: avoids anyio portal hanging issue)
+
+scikit-learn==1.5.1
+joblib==1.4.2
+fastapi>=0.110.0
+starlette<1.0.0
+pydantic>=2.0.0
+uvicorn>=0.30.0
